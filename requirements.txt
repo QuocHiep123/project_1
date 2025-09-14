@@ -1,0 +1,14 @@
+# Framework chính
+pip install langchain langchain-community
+
+# Thư viện cho mô hình Embedding và LLM
+pip install torch sentence-transformers transformers huggingface_hub
+
+# Thư viện đọc file PDF
+pip install pypdf
+
+# Thư viện Vector Database
+pip install faiss-cpu
+
+# Thư viện để tạo giao diện
+pip install streamlit
