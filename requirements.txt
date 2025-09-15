@@ -1,14 +1,30 @@
-# Framework chính
-pip install langchain langchain-community
+# --- Core AI/ML Framework ---
+# PyTorch là nền tảng tính toán chính cho hầu hết các mô hình deep learning
+torch
 
-# Thư viện cho mô hình Embedding và LLM
-pip install torch sentence-transformers transformers huggingface_hub
+# --- LangChain Framework ---
+# Các thư viện cốt lõi của LangChain để xây dựng pipeline RAG
+langchain
+langchain-community
+langchain-core
 
-# Thư viện đọc file PDF
-pip install pypdf
+# --- Hugging Face Ecosystem ---
+# Dùng để tải và sử dụng các mô hình từ Hugging Face Hub
+transformers
+sentence-transformers # Chuyên dụng và hiệu quả cho việc tạo embedding
+huggingface_hub
+accelerate # Giúp chạy các mô hình lớn hiệu quả hơn
+bitsandbytes # Cần thiết để load các mô hình được lượng tử hóa (quantized)
 
-# Thư viện Vector Database
-pip install faiss-cpu
+# --- Vector Database ---
+# FAISS là thư viện của Facebook để tìm kiếm tương đồng hiệu quả
+# phiên bản -cpu không yêu cầu card đồ họa NVIDIA
+faiss-cpu
 
-# Thư viện để tạo giao diện
-pip install streamlit
+# --- Data Handling ---
+# Dùng để đọc và trích xuất văn bản từ file PDF
+pypdf
+
+# --- Web Application ---
+# Dùng để tạo giao diện demo cho sản phẩm một cách nhanh chóng
+gradio
